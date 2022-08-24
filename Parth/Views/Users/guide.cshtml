@@ -1,0 +1,22 @@
+﻿@model Parth.Models.User
+
+@{
+    ViewBag.Title = "guide";
+}
+<div class="container gx-5">
+    <div class="col-8">
+        <h2>Introduction</h2>
+        <hr style="color:white;height:3px" />
+        <p class="h5">This is a web based application used for searching addresses of agriculture related places.Sometimes we are put in difficulty that which shoap give good products.At that time this application we'll give addresses of shoaps, factories, Universities, etc.</p>
+    </div>
+    <div class="col-8">
+        <h2>What is in Addressbook?</h2>
+        <hr style="color:white;height:3px" />
+        <p>First of all you have to enter your username and password and click on Login <button type="submit" class="btn btn-success" onclick="location.href = '@Url.Action("Login")'">Login</button> button for login into web application. If you don't have an account then click on Sign up <button type="button" class="btn btn-primary" onclick="location.href = '@Url.Action("Create")'">Sign Up</button> button and fill required details in it. Then you can see Homepage of web application and in this page you can also see a left menu for navigate other pages. In this left menu you can see five buttons Home, What Is Addressbook?, Looking For Place?, About Us, Logout.Home button is for go to home page: <a href="" class="list-group-item list-group-item-action">Home</a> Second button is give information about this application: <a href="" class="list-group-item list-group-item-action">What Is Addressbook?</a> Third one is use for search agriculture related places and information about stores: <a href="" class="list-group-item list-group-item-action">Looking For Place?</a> Fourth button  is for contact to developers: <a href="" class="list-group-item list-group-item-action">About Us</a> Last one is for logout from your account: <a href="" class="list-group-item list-group-item-action">Logout</a></p>
+    </div>
+    <div class="col-8">
+        <h2>How To Search In Addressbook?</h2>
+        <hr style="color:white;height:3px" />
+        <p>First Of all You have to go in <a href="" class="list-group-item list-group-item-action">Looking For Place?</a> and you can see three dropdown list  For selecting category, district, taluka accordingly. Select your liked items and click on Search Button <button class="alert-info" id="srch">Search</button>.Your Places are Shown.</p>
+    </div>
+</div>

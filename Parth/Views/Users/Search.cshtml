@@ -1,0 +1,36 @@
+﻿<script src="~/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container" align="center">
+    <div class="row" style="margin-block:10%">
+
+        <div class="card cols-md-5 offset-md-4 border border-success border-3 m-auto" style="width:auto">
+            <div class="card-header">
+                <h2>Search Your Destination here </h2>
+            </div>
+            <div class="card-body row g-md-3">
+
+                <select class="form-select-lg" aria-label="Default select example">
+                    <option selected>Open this Cetegory menu</option>
+                    <option value="1"></option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select-lg" aria-label="Default select example">
+                    <option selected>Open this District menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select-lg" aria-label="Default select example">
+                    <option selected>Open this Taluka menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div align="center">
+                <button class="alert-info" id="srch" onclick="location.href = '@Url.Action("Places")'">Search</button>
+            </div>
+        </div>
+    </div>
+</div>

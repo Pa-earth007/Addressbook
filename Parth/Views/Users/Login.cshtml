@@ -1,0 +1,49 @@
+﻿@model Parth.Models.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+<form method="post">
+
+    <div class="container" align="center">
+        <div class="row" style="margin-block:10%">
+
+            <div class="card cols-md-5 offset-md-4 border border-success border-3 m-auto" style=" width: 24rem; ">
+                <div class="card-body">
+                    <div align="center">
+                        <h1 class="card-title">Log-In</h1>
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" /></svg></span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="text" name="Username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="username">
+                            <label for="username">Username</label>
+                        </div>
+
+                    </div>
+                    <div class="input-group input-group-lg  mb-3">
+                        <span class="input-group-text " id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16"><path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" /></svg></span>
+
+                        <div class="form-floating input-group-lg ">
+                            <input type="password" name="Password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="Password">
+                            <label for="Password">Password</label>
+                        </div>
+                    </div>
+
+                    <!--Button-->
+                    <div align="center">
+                        <button type="submit" class="btn btn-success">Login</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href = '@Url.Action("Create")'">Sign Up</button>
+                    </div>
+                    <div align="center">
+                        <a href="~/Users/guide">What is Address Book?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

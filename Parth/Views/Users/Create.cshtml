@@ -1,0 +1,99 @@
+﻿@model Parth.Models.User
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+<script src="~/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<form method="post">
+
+    <div class="container" align="center">
+        <div class="row" style="margin-top: 5%">
+
+            <div class="card cols-md-5 offset-md-4 border border-success border-3 m-auto" style=";width: 24rem;">
+                <div class="card-body">
+                    <div align="center">
+                        <h1 class="card-title">Registration</h1>
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z" />
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            </svg>
+                        </span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="text" name="Name" class="form-control" placeholder="Enter Your Name" id="Name" aria-label="Username" aria-describedby="basic-addon1">    
+                            <label for="Name">Enter Your Name</label>
+                        </div>
+                        
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="text" name="Mobile" id="Mobile" class="form-control" placeholder="Enter Your Mobile" aria-label="Username" aria-describedby="basic-addon1">
+                            <label for="Mobile">Enter Your Mobile No.</label>
+                        </div>
+                        
+                    </div>
+
+                    <input type="text" name="UserType" value="User" hidden />
+
+
+
+
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg>
+                        </span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="text" name="Email" class="form-control" id="Email" placeholder="Enter Your E-mail" aria-label="Username" aria-describedby="basic-addon1">    
+                            <label for="Email">Enter Your Email Address</label>
+                        </div>
+                        
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" fill="#000" />
+                                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" fill="#000" />
+                            </svg>
+                        </span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="text" name="Username" class="form-control" id="Username" placeholder="Enter Your Username" aria-label="Username" aria-describedby="basic-addon1">    
+                            <label for="Username">Enter Your Username</label>
+                        </div>
+                        
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text " id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock-fill" viewBox="0 0 16 16">
+                                <path d="M7 6a1 1 0 0 1 2 0v1H7V6zM6 8.3c0-.042.02-.107.105-.175A.637.637 0 0 1 6.5 8h3a.64.64 0 0 1 .395.125c.085.068.105.133.105.175v2.4c0 .042-.02.107-.105.175A.637.637 0 0 1 9.5 11h-3a.637.637 0 0 1-.395-.125C6.02 10.807 6 10.742 6 10.7V8.3z" />
+                                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z" />
+                            </svg>
+                        </span>
+                        <div class="form-floating input-group-lg ">
+                            <input type="password" name="Password" class="form-control" placeholder="Enter Your Password" aria-label="Username" aria-describedby="basic-addon1" id="password">
+                            <label for="password">Password</label>
+                        </div>
+                        
+                    </div>
+                    <!--Button-->
+                    <div align="center">
+                        <button type="submit" class="btn btn-success">Sign-Up</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
